@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
 html{
@@ -31,6 +33,24 @@ section nav .logo img{
     cursor: pointer;
     margin: 7px 0;
 }
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: #000;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+#menu-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
 
 section nav ul{
     list-style: none;
