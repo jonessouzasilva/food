@@ -52,7 +52,7 @@ section nav ul li a{
 
 section nav ul li a::after{
     content: '';
-    width: 0;
+    width: 100%;
     height: 2px;
     background: #fac031;
     display: block;
@@ -789,8 +789,4 @@ footer .end span{
 ::-webkit-scrollbar-track{
     border-radius: 15px;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
-}
-
-@media screen and (max-width: 786px){
-    
 }
