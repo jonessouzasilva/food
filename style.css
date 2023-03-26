@@ -5,160 +5,106 @@
     font-family: sans-serif;
     list-style: none;
     text-decoration: none;
-}
-
-html{
     scroll-behavior: smooth;
 }
-
-section{
-    width: 100%;
-    height: 100vh;
+body{
+    background: #fff;
+    color: #000;
 }
-
-section nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+header{
     position: fixed;
+    width: 100%;
+    top: 0;
     right: 0;
-    left: 0;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 23px 15%;
+    transition: all .38s ease;
 }
-
-section nav .logo img{
-    width: 100px;
-    cursor: pointer;
-    margin: 7px 0;
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fac031;
 }
-
+span{
+    color: #fac031;
+}
 .navbar{
     display: flex;
 }
-
 .navbar a{
     color: #000;
-    font-size: 1.1rem;
-    padding: 10px 20px;
-    font-weight: 500;
+    font-size: large;
+    font-weight: 600;
+    padding: 5px 10px;
+    margin: 2px 25px;
+    border-bottom: 2px solid #fac031;
+    transition: all .38s ease;
 }
-
+.navbar a:hover{
+    border-bottom: 2px solid #000;
+    color: #fac031;
+}
+.h-icons{
+    display: flex;
+    align-items: center;
+    padding: 10px 22px;
+    font-size: 22px;
+    margin-right: 15px;
+    margin-left: 8px;
+}
 #menu-icon{
-    font-size: 2rem;
+    font-size: 32px;
+    color: #000;
+    z-index: 10001;
     cursor: pointer;
     display: none;
 }
 
-
-section nav ul{
-    list-style: none;
+section{
+    padding: 90px 15% 80px;
 }
-
-
-section nav ul li{
-    display: inline-block;
-    margin: 0 15px;
-}
-
-section nav ul li a{
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
-    font-size: 17px;
-    transition: 0.1s;
-}
-
-section nav ul li a::after{
-    content: '';
+.home{
+    height: 88vh;
     width: 100%;
-    height: 2px;
-    background: #fac031;
-    display: block;
-    transition: 0.2s linear;
-}
-
-section nav ul li a:hover::after{
-    width: 100%;
-}
-
-section nav ul li a:hover{
-    color: #fac031;
-}
-
-section nav .icon i{
-    font-size: 18px;
-    color: #000;
-    margin: 0 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-
-section nav .icon i:hover{
-    color: #fac031;
-}
-
-section .main{
-    display: flex;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    justify-content: space-around;
-    position: relative;
-    top: 130px;
+    gap: 2rem;
 }
-
-section .main .men_text h1{
-    font-size: 60px;
-    position: relative;
-    top: -90px;
-    left: 20px;
+.home-img img{
+    width: 100%;
+    height: auto;
 }
-
-section .main .men_text h1 span{
-    margin-left: 15px;
-    color: #fac031;
+.home-text h1{
+    font-size: large;
+    line-height: 1.2;
+    margin-bottom: 2rem;
     font-family: mv boli;
-    line-height: 22px;
-    font-size: 70px;
 }
-
-section .main .main_image img{
-    width: 700px;
-    position: relative;
-    left: 70px;
+.home-text p{
+    font-size: large;
+    font-weight: 500;
+    color: #000;
+    line-height: 32px;
+    margin-bottom: 2.3rem;
 }
-
-section p{
-    width: 650px;
-    text-align: justify;
-    position: relative;
-    left: 123px;
-    bottom: 120px;
-    line-height: 22px;
-}
-section .main_btn{
+.btn{
+    display: inline-block;
+    padding: 14px 26px;
     background: #fac031;
-    position: relative;
-    left: 123px;
-    bottom: 30px;
-    width: 150px;
-    cursor: pointer;
-    padding: 12px 25px;
-}
-section .main_btn a{
     color: #fff;
-    margin-right: 5px;
-    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5rem;
+    transition: all .38s ease;
 }
-
-section .main_btn i{
-    color: #fff;
-    transition: 0.3s;
-}
-
-section .main_btn:hover i{
-    transform: translateX(7px);
+.btn:hover{
+    letter-spacing: 1px;
 }
 
 /*About*/
@@ -454,198 +400,6 @@ section .main_btn:hover i{
     transform: translateY(0);
 }
 
-.review{
-    width: 100%;
-    height: 100vh;
-    padding: 70px 0;
-}
-
-.review h1{
-    font-size: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.review h1 span{
-    margin-left: 15px;
-    color: #fac031;
-    font-family: mv boli;
-}
-
-.review h1 span::after{
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: #fac031;
-    position: relative;
-    bottom: 15px;
-    display: block;
-}
-
-.review .review_box{
-    width: 95%;
-    margin: 70px auto;
-    display: flex;
-}
-
-.review .review_box .review_card{
-    width: 350px;
-    height: 435px;
-    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.5);
-    border-radius: 8px;
-    padding: 8px 20px;
-    margin: 0 8px;
-}
-
-.review .review_box .review_card .review_profile{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    transition: 0.3s;
-}
-
-.review .review_box .review_card:hover .review_profile{
-    transform: translateY(-60px);
-}
-
-.review .review_box .review_card .review_profile img{
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-    border: 5px solid #cccccc;
-}
-
-.review .review_box .review_card .review_text{
-    text-align: center;
-}
-
-.review .review_box .review_card .review_text .name{
-    color: #000;
-    transition: 0.3s;
-}
-
-.review .review_box .review_card:hover .review_text .name{
-    transform: translateY(-50px);
-}
-
-.review .review_box .review_card .review_text .review_icon{
-    color: #fac031;
-    transition: 0.3s;
-}
-
-.review .review_box .review_card:hover .review_text .review_icon{
-    transform: translateY(-30px);
-}
-
-.review .review_box .review_card .review_text .review_social i{
-    margin: 5px 1px;
-    font-size: 15px;
-    opacity: 0;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.review .review_box .review_card:hover .review_text .review_social i{
-    opacity: 1;
-    transform: translateY(-8px);
-}
-
-.review .review_box .review_card .review_text p{
-    text-align: center;
-    line-height: 22px;
-    transition: 0.3s;
-}
-
-.review .review_box .review_card:hover .review_text p{
-    margin-top: 5px;
-}
-
-.order{
-    width: 100%;
-    height: 100vh;
-    padding: 70px 0;
-    background-image: url(image/bg2.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.order h1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000;
-    font-size: 55px;
-}
-
-.order h1 span{
-    color: #fac031;
-    margin-right: 15px;
-    font-family: mv boli;
-}
-
-.order h1 span::after{
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: #fac031;
-    display: block;
-    position: relative;
-    bottom: 15px;
-}
-
-.order .order_main{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.order .order_main .order_image img{
-    width: 600px;
-}
-
-.order .order_main form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 0 10px;
-}
-
-
-.order .order_main form .input p{
-    line-height: 25px;
-}
-
-.order .order_main form .input{
-    margin: 5px;
-}
-
-.order .order_main form .input input{
-    width: 300px;
-    height: 35px;
-    padding: 0 10px;
-    border: 2px solid #cccccc;
-    background: #eeeeee;
-    outline: none;
-    border-radius: 3px;
-}
-
-.order .order_main form .input input:focus{
-    border: 2px solid #fac031;
-}
-
-.order .order_main form .order_btn{
-    padding: 10px 0;
-    background: #fac031;
-    color: white;
-    width: 40%;
-    text-align: center;
-    margin-top: 20px;
-    text-decoration: none;
-}
-
 .team{
     padding: 150px 0;
     width: 100%;
@@ -810,4 +564,3 @@ footer .end span{
     border-radius: 15px;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
 }
-
