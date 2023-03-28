@@ -62,18 +62,14 @@ span{
     align-items: center;
     padding: 10px 22px;
     background: var(--main-color);
-    color: var(--bg-color);
     border-radius: 5rem;
     font-size: 22px;
-    margin-right: 15px;
-    margin-left: 8px;
 }
 #menu-icon{
     font-size: 32px;
     color: var(--bg-color);
     z-index: 10001;
     cursor: pointer;
-    display: none;
 }
 
 section{
@@ -321,7 +317,7 @@ header.sticky{
     }
     .home-img img{
         height: auto;
-        max-width: 40%;
+        max-width: 590px;
         width: 100%;
     }
     .home-text{
@@ -335,7 +331,7 @@ header.sticky{
     }
     .about-img img{
         height: auto;
-        max-width: 50%;
+        max-width: 590px;
         width: 100%;
     }
 }
