@@ -77,3 +77,25 @@ span{
     cursor: pointer;
     display: none;
 }
+
+section{
+    padding: 90px 15% 80px;
+}
+.home{
+    height: 88vh;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.home-img img{
+    width: 100%;
+    height: auto;
+}
+.home-text h1{
+    font-size: var(--big-font);
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
