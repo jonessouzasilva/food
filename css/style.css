@@ -47,4 +47,33 @@ span{
 .navbar a{
     color: var(--text-color);
     font-size: var(--p-font);
+    font-weight: 600;
+    padding: 5px 10px;
+    margin: 2px 25px;    
+    border-bottom: 2px solid transparent;
+    transition: all .38s ease;
+}
+.navbar a:hover{
+    border-bottom: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+.h-icons{
+   display: flex; 
+   align-items: center;
+   padding: 10px 22px;
+   background: var(--main-color);
+   border-radius: 5rem;
+}
+.h-icons i{
+    font-size: 22px;
+    color: var(--bg-color);
+    margin-right: 15px;
+    margin-left: 8px;
+}
+#menu-icon{
+    font-size: 32px;
+    color: var(--bg-color);
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
 }
