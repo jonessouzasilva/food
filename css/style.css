@@ -99,3 +99,23 @@ section{
     line-height: 1.2;
     margin-bottom: 2rem;
 }
+.home-text p{
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--second-color);
+    line-height: 32px;
+    margin-bottom: 2.3rem;
+}
+.btn{
+    display: inline-block;
+    padding: 14px 26px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5rem;
+    transition: all .38s ease;
+}
+.btn:hover{
+    letter-spacing: 1px;
+}
