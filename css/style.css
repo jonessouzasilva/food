@@ -134,10 +134,29 @@ header.sticky{
     color: var(--second-color);
     line-height: 32px;
 }
-.conatiner-box{
+.container-box{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 2rem;
     align-items: center;
     margin-top: 4rem;
+}
+.c-mainbx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+    border-radius: 10px;
+    height: 90px;
+    background: var(--bg-color);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transition: all .38s ease;
+}
+.container-text p{
+    font-size: var(--p-font);
+    font-weight: 500;
+}
+.c-mainbx:hover{
+    transform: translateX(10px);
+    cursor: pointer;
 }
