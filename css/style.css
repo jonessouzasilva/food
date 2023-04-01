@@ -355,7 +355,7 @@ header.sticky{
     }
     .home-img img{
         height: auto;
-        max-width: 70%;
+        max-width: 100%;
         width: 100%;
     }
     .home-text{
@@ -369,7 +369,7 @@ header.sticky{
     }
     .sobre-img img{
         height: auto;
-        max-width: 70%;
+        max-width: 100%;
         width: 100%;
     }
 
